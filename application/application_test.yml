@@ -1,0 +1,32 @@
+proxy:
+  title: Test Server
+  port: 8080 
+  template-path: ./templates/test
+ 
+  authentication: none
+  admin-groups: adminecrf
+  users:
+  - name: admin
+    password: admin
+    groups: admin
+  
+  container-backend: docker 
+  
+  docker:
+      internal-networking: true
+  
+
+  specs:
+  - id: testapp
+    display-name: testapp
+    description: testapp
+    container-image: testapp
+    container-network: sp-net
+    access-groups: admin
+
+    
+logging:
+  file:
+    shinyproxy.log
+
+ 
