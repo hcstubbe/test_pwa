@@ -1,0 +1,25 @@
+proxy:
+  title: Test Server
+  port: 8080 
+ 
+  authentication: none
+  admin-groups: admingroup
+  users:
+  - name: admin
+    password: admin
+    groups: admingroup
+  
+  container-backend: docker 
+      
+  specs:
+  - id: testapp
+    display-name: Test app
+    description: This is a shinyMobile app for testing PWA
+    container-image: testapp
+    access-groups: admingroup
+
+logging:
+  file:
+    shinyproxy.log
+
+ 
