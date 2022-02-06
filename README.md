@@ -17,6 +17,7 @@ docker-compose -f ./shinyproxy/shinyproxy_docker.yml up
 ```
 
 ## Alternatlively, test the shiny app only 
+This is the only option I got to work right now.
 ```
 docker-compose -f ./pwa-testapp/test-app-only.yml up
 ```
