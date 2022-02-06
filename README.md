@@ -27,3 +27,25 @@ wget https://www.shinyproxy.io/downloads/shinyproxy-2.6.0.jar -O ./shinyproxy-st
 cd shinyproxy-standalone
 sudo java -jar shinyproxy.jar     
 ```
+
+## Docker engine setup
+```
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "debug": false,
+  "experimental": false,
+  "features": {
+    "buildkit": true
+  },
+  "hosts": [
+    "tcp://127.0.0.1:2375"
+  ],
+  "insecure-registries": [],
+  "registry-mirrors": []
+}
+```
