@@ -3,7 +3,7 @@ proxy:
   port: 8080 
   template-path: /templates/test
  
-  authentication: simple
+  authentication: none
   admin-groups: admingroup
   users:
   - name: admin
