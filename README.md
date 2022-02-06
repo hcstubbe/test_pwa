@@ -1,4 +1,4 @@
-# Setup of PWA app
+# Shiny progressive web app (PWA) deployment using ShinyProxy
 
 ## Pull the latest shinyproxy image
 ```
