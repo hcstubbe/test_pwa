@@ -16,14 +16,14 @@ docker pull openanalytics/shinyproxy:latest
 docker build -t testapp ./pwa-testapp
 ```
 
-## Start the shinyproxy
+## Start the shinyproxy using docker-compose
 ```
 export DOCKERID=$(getent group docker | cut -d: -f3)
 docker-compose -f ./shinyproxy/shinyproxy_docker.yml up
 ```
 
-## Alternatlively, test the shiny app only 
-This is the only option I got to work right now.
+## Alternatlively, test the shiny app only (without ShinyProxy)
+This is the only option I got to work PWA-support right now.
 ```
 docker-compose -f ./pwa-testapp/test-app-only.yml up
 ```
