@@ -1,5 +1,11 @@
 # Shiny progressive web app (PWA) deployment using ShinyProxy
 
+## Pull this repository
+```
+git clone https://github.com/hcstubbe/test_pwa.git
+cd test_pwa
+```
+
 ## Pull the latest shinyproxy image
 ```
 docker pull openanalytics/shinyproxy:latest
