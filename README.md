@@ -24,5 +24,6 @@ docker-compose -f ./pwa-testapp/test-app-only.yml up
 ## Or test whith shinyproxy as standalone 
 ```
 wget https://www.shinyproxy.io/downloads/shinyproxy-2.6.0.jar -O ./shinyproxy-standalone/shinyproxy.jar
-java -jar ./shinyproxy-standalone/shinyproxy.jar     
+cd shinyproxy-standalone
+sudo java -jar shinyproxy.jar     
 ```
