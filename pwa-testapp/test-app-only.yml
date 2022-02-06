@@ -4,7 +4,7 @@ version: '3.5'
 services:
 
   test_app:
-    image: test_app
+    image: testapp
     restart: always
     ports:
       - 3838:3838
