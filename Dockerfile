@@ -5,8 +5,10 @@ RUN R -e 'install.packages("remotes")'
 RUN Rscript -e 'remotes::install_version("shiny",upgrade="never")'
 RUN Rscript -e 'remotes::install_version("shinyMobile",upgrade="never")'
 
-EXPOSE 3838
-# run app on container start
 COPY ./testapp /testapp
-WORKDIR /testapp
-CMD ["R", "-e", "shiny::runApp(host = '0.0.0.0', port = 3838)"]
+
+COPY Rprofile.site /usr/lib/R/etc/
+
+EXPOSE 3838
+
+CMD ["R", "-e", "shiny::runApp('/testapp')"]

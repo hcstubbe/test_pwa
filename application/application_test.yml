@@ -3,26 +3,31 @@ proxy:
   port: 8080 
   template-path: ./templates/test
  
-  authentication: none
-  admin-groups: adminecrf
+  authentication: simple
+  admin-groups: admingroup
   users:
   - name: admin
     password: admin
-    groups: admin
+    groups: admingroup
   
   container-backend: docker 
   
   docker:
       internal-networking: true
   
-
   specs:
   - id: testapp
     display-name: testapp
     description: testapp
     container-image: testapp
     container-network: sp-net
-    access-groups: admin
+    access-groups: admingroup
+    
+  - id: euler
+    display-name: Euler's number
+    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
+    container-image: openanalytics/shinyproxy-template
+    access-groups: admingroup
 
     
 logging:
