@@ -1,6 +1,6 @@
 # Shiny progressive web app (PWA) deployment using ShinyProxy
 
-## Pull this repository
+## Clone this repository
 ```
 git clone https://github.com/hcstubbe/test_pwa.git
 cd test_pwa
