@@ -4,7 +4,7 @@ version: '3.5'
 services:
                               
   shinyproxy:
-    image: openanalytics/shinyproxy:2.6.0
+    image: openanalytics/shinyproxy:latest
     ports:
       - 8080:8080
     networks:
@@ -19,7 +19,9 @@ services:
     volumes:
       - ./application/application_test.yml:/opt/shinyproxy/application.yml
       - /var/run/docker.sock:/var/run/docker.sock
+    user: ":${DOCKERID}"
 
 networks:
   sp-net:
     external: true
+
