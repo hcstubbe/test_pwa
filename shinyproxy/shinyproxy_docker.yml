@@ -17,9 +17,9 @@ services:
         constraints:
           - node.role==manager
     volumes:
-      - /application/application_test.yml:/opt/shinyproxy/application.yml
+      - ./application/application_test.yml:/opt/shinyproxy/application.yml
       - /var/run/docker.sock:/var/run/docker.sock
-      - /templates:/templates
+      - /templates/:/templates/
     user: ":${DOCKERID}"
 
 networks:
