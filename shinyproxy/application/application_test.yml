@@ -17,20 +17,12 @@ proxy:
   
   specs:
   - id: testapp
-    display-name: testapp
-    description: testapp
+    display-name: Test app
+    description: This is a shinyMobile app for testing PWA
     container-image: testapp
     container-network: sp-net
     access-groups: admingroup
-    
-  - id: euler
-    display-name: Euler's number
-    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
-    container-image: openanalytics/shinyproxy-template
-    access-groups: admingroup
-    container-network: sp-net
 
-    
 logging:
   file:
     shinyproxy.log
