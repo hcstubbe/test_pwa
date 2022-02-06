@@ -17,6 +17,7 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head lang="en">
+	<link rel="manifest" th:href="@{/assets/manifest.webmanifest}">
 	<title th:text="${appTitle} + ' - ' + ${appInstanceDisplayName}"></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" media="screen" th:href="@{${bootstrapCss}}" />
@@ -33,9 +34,6 @@
 	<script th:src="@{/js/shiny.common.js}"></script>
 	<script th:if="${operatorEnabled}" th:src="@{/js/shiny.operator.js}"></script>
 	<script th:src="@{/handlebars/precompiled.js}"></script>
-	<th:block th:if="${appName == 'testapp'}">
-		<link rel="manifest" th:href="@{/assets/manifest.webmanifest}">
-	</th:block>
 </head>
 <body id="appPage">
 	<div th:replace="../fragments/navbar :: navbar"></div>
