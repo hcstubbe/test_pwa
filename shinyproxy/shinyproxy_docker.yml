@@ -19,7 +19,7 @@ services:
     volumes:
       - ./application/application_test.yml:/opt/shinyproxy/application.yml
       - /var/run/docker.sock:/var/run/docker.sock
-      - /templates/:/templates/
+      - ./templates/test/:/templates/test/
     user: ":${DOCKERID}"
 
 networks:
