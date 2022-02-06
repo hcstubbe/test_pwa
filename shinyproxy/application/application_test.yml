@@ -1,7 +1,7 @@
 proxy:
   title: Test Server
   port: 8080 
-  template-path: ./templates/test
+  template-path: /templates/test
  
   authentication: simple
   admin-groups: admingroup
