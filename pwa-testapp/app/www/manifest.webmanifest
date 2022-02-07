@@ -1,6 +1,6 @@
 {
   "name": "My Progressive Web App",
-  "short_name": "My App 2",
+  "short_name": "My App 2 - local manifest",
   "description": "What it does!",
   "lang": "en-US",
   "start_url": "/app/testapp",
