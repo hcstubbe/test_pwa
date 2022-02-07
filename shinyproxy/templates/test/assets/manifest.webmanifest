@@ -1,9 +1,9 @@
 {
-  "name": "Test app",
-  "short_name": "testapp",
-  "description": "This is a shinyMobile app for testing PWA",
+  "name": "My Progressive Web App",
+  "short_name": "My App 2",
+  "description": "What it does!",
   "lang": "en-US",
-  "start_url": "/",
+  "start_url": "/app/testapp",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
