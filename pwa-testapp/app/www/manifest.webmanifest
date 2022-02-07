@@ -3,6 +3,6 @@
   "short_name": "testapp",
   "description": "testapp",
   "lang": "en",
-  "start_url": "/testapp",
+  "start_url": "/app/testapp",
   "display": "standalone"
 }
