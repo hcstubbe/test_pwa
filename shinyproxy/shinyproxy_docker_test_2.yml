@@ -5,7 +5,7 @@ services:
                               
   shinyproxy:
     # image: openanalytics/shinyproxy:latest
-    image: hstubbe/shp
+    image: shinyproxytest2
     ports:
       - 8080:8080
     networks:
@@ -18,9 +18,7 @@ services:
         constraints:
           - node.role==manager
     volumes:
-      - ./application/application_test.yml:/opt/shinyproxy/application.yml
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./templates/test/:/templates/test/
     user: ":${DOCKERID}"
 
 networks:
