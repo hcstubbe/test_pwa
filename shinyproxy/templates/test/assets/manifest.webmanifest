@@ -3,7 +3,7 @@
   "short_name": "testapp",
   "description": "This is a shinyMobile app for testing PWA",
   "lang": "en-US",
-  "start_url": "/app/testapp",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
