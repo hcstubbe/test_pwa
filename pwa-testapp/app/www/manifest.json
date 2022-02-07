@@ -1,0 +1,8 @@
+{
+  "name": "testapp",
+  "short_name": "testapp",
+  "description": "testapp",
+  "lang": "en",
+  "start_url": "/testapp",
+  "display": "standalone"
+}
