@@ -3,7 +3,8 @@
   "short_name": "My App 2",
   "description": "What it does!",
   "lang": "en-US",
-  "start_url": "/app_direct/testapp/",
+  "start_url": "/app/testapp/",
+  "scope": "/app_direct_i/testapp/"
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
