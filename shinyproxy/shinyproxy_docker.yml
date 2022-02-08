@@ -4,7 +4,8 @@ version: '3.5'
 services:
                               
   shinyproxy:
-    image: openanalytics/shinyproxy:latest
+#    image: openanalytics/shinyproxy:latest
+    image: hstubbe/shp:latest
     ports:
       - 8080:8080
     networks:
