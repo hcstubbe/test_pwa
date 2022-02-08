@@ -23,7 +23,7 @@ proxy:
     container-network: sp-net
     access-groups: admingroup
     
-- id: lcarsm
+  - id: lcarsm
     display-name: Test app
     description: This is a shinyMobile app for testing PWA
     container-image: hstubbe/lcarsm:latest
