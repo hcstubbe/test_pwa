@@ -12,6 +12,7 @@ docker pull openanalytics/shinyproxy:latest
 ```
 
 ## Build the shinyMobile pwa test-app image
+This image has to be built using a modified version of shinyMobile; see Dockerfile.
 ```
 docker build -t testapp ./pwa-testapp
 ```
