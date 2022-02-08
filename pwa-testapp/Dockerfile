@@ -3,7 +3,8 @@ RUN apt-get update && apt-get install -y  git-core libcurl4-openssl-dev libgit2-
 RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl', Ncpus = 4)" >> /usr/local/lib/R/etc/Rprofile.site
 RUN R -e 'install.packages("remotes")'
 RUN Rscript -e 'remotes::install_version("shiny",upgrade="never")'
-RUN Rscript -e 'remotes::install_version("shinyMobile",upgrade="never")'
+RUN Rscript -e 'remotes::install_version("devtools",upgrade="never")'
+RUN Rscript -e 'devtools::install_github("hcstubbe/shinyMobile")'
 
 COPY ./app /app
 
